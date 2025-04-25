@@ -1,0 +1,59 @@
+﻿<Window x:Class="WpfSelfWorking.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSelfWorking"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FF292929">
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Foreground="White" Margin="10 5 5 5">File</TextBlock>
+                <TextBlock Foreground="White" Margin="5">Notifications</TextBlock>
+                <TextBlock Foreground="White" Margin="5">Status</TextBlock>
+                <TextBlock Foreground="White" Margin="5">View</TextBlock>
+                <TextBlock Foreground="White" Margin="5">Customer</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Foreground="#FFA4A1A1" FontSize="30px" Margin="10 5">Customer Search</TextBlock>
+                <TextBlock Foreground="White" FontSize="30px" Margin="10 5">Edit Customer</TextBlock>
+            </StackPanel>
+            <StackPanel Background="#FF565656" Height="50px" Margin="5px">
+                <StackPanel Height="50px" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Height="40px" Width="100px" Margin="5px 0" Background="#FF8F8C8C" BorderThickness="2px" BorderBrush="#FFCECECE" Foreground="White" FontSize="15" HorizontalContentAlignment="Left" Padding="5px">Save Data</Button>
+                    <Button Height="40px" Width="100px" Margin="5px 0" Background="#FF8F8C8C" BorderThickness="2px" BorderBrush="#FFCECECE" Foreground="White" FontSize="15" HorizontalContentAlignment="Left" Padding="5px">Close</Button>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Background="#FF565656" Height="275px" Margin="5px" Orientation="Vertical">
+                <StackPanel Orientation="Horizontal" Height="180px" VerticalAlignment="Top">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Foreground="White" Margin="20 6">First Name:</TextBlock>
+                        <TextBlock Foreground="White" Margin="20 6">Last Name:</TextBlock>
+                        <TextBlock Foreground="White" Margin="20 8">Company Name:</TextBlock>
+                        <TextBlock Foreground="White" Margin="20 8">Division:</TextBlock>
+                        <TextBlock Margin="10 20" FontWeight="Bold">Phone Numbers</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <TextBox Width="200px" Height="20px" Background="Black" BorderThickness="1px" BorderBrush="White" Margin="0 5" Foreground="White"></TextBox>
+                        <TextBox Width="200px" Height="20px" Background="Black" BorderThickness="1px" BorderBrush="White" Margin="0 5" Foreground="White"></TextBox>
+                        <TextBox Width="200px" Height="20px" Background="Black" BorderThickness="1px" BorderBrush="White" Margin="0 5" Foreground="White"></TextBox>
+                        <TextBox Width="200px" Height="20px" Background="Black" BorderThickness="1px" BorderBrush="White" Margin="0 5" Foreground="White"></TextBox>
+                    </StackPanel>
+                    <TextBlock Foreground="White" Margin="20 6">Birthday: </TextBlock>
+                    <Calendar></Calendar>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Foreground="White" Margin="20 6">Phone:</TextBlock>
+                        <TextBlock Foreground="White" Margin="20 6">Fax:</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <TextBox Width="200px" Height="20px" Background="Black" BorderThickness="1px" BorderBrush="White" Margin="50 5" Foreground="White"></TextBox>
+                        <TextBox Width="200px" Height="20px" Background="Black" BorderThickness="1px" BorderBrush="White" Margin="50 5" Foreground="White"></TextBox>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
